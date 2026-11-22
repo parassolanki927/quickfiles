@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:shortcutId="downloads" android:enabled="true"
+        android:shortcutShortLabel="@string/downloads">
+        <intent android:action="OPEN_FOLDER"
+            android:targetPackage="com.rahul.quickfiles"
+            android:targetClass="com.rahul.quickfiles.MainActivity">
+            <extra android:name="doc" android:value="primary:Download" />
+        </intent>
+    </shortcut>
+    <shortcut android:shortcutId="images" android:enabled="true"
+        android:shortcutShortLabel="@string/images">
+        <intent android:action="OPEN_FOLDER"
+            android:targetPackage="com.rahul.quickfiles"
+            android:targetClass="com.rahul.quickfiles.MainActivity">
+            <extra android:name="doc" android:value="primary:Pictures" />
+        </intent>
+    </shortcut>
+    <shortcut android:shortcutId="camera" android:enabled="true"
+        android:shortcutShortLabel="@string/camera">
+        <intent android:action="OPEN_FOLDER"
+            android:targetPackage="com.rahul.quickfiles"
+            android:targetClass="com.rahul.quickfiles.MainActivity">
+            <extra android:name="doc" android:value="primary:DCIM" />
+        </intent>
+    </shortcut>
+    <shortcut android:shortcutId="documents" android:enabled="true"
+        android:shortcutShortLabel="@string/documents">
+        <intent android:action="OPEN_FOLDER"
+            android:targetPackage="com.rahul.quickfiles"
+            android:targetClass="com.rahul.quickfiles.MainActivity">
+            <extra android:name="doc" android:value="primary:Documents" />
+        </intent>
+    </shortcut>
+</shortcuts>

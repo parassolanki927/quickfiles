@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quick Files</string>
+    <string name="tagline">તમારા ફોનનું ફાઇલ મેનેજર, એક ટેપમાં</string>
+    <string name="open_fm">ફાઇલ મેનેજર ખોલો</string>
+    <string name="storage">સ્ટોરેજ</string>
+    <string name="free_of">%1$s ખાલી, કુલ %2$s</string>
+    <string name="downloads">ડાઉનલોડ્સ</string>
+    <string name="images">ફોટા</string>
+    <string name="camera">કૅમેરા</string>
+    <string name="videos">વિડિયો</string>
+    <string name="music">સંગીત</string>
+    <string name="documents">દસ્તાવેજો</string>
+    <string name="not_found">ફાઇલ મેનેજર મળ્યું નહીં</string>
+</resources>
