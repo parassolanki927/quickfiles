@@ -60,7 +60,7 @@ class MainActivity : Activity() {
     private fun styledButton(text: String, bg: Int, fg: Int, onClick: () -> Unit) =
         Button(this).apply {
             this.text = text
-            isAllCaps = false
+            transformationMethod = null
             setTextColor(fg)
             setTextSize(TypedValue.COMPLEX_UNIT_SP, 16f)
             background = roundBg(bg, 14)
@@ -146,7 +146,7 @@ class MainActivity : Activity() {
             try {
                 startActivity(i)
                 return
-            } catch (_: Exception) {
+            } catch (e: Exception) {
             }
         }
         Toast.makeText(this, R.string.not_found, Toast.LENGTH_LONG).show()
@@ -158,7 +158,7 @@ class MainActivity : Activity() {
             startActivity(
                 Intent(Intent.ACTION_VIEW).setDataAndType(uri, DocumentsContract.Document.MIME_TYPE_DIR)
             )
-        } catch (_: Exception) {
+        } catch (e: Exception) {
             openFileManager()
         }
     }
